@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #20adaf;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+h2 {
+  color: #222;
+  padding-top: 10px;
+}
