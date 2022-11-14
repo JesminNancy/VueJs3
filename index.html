@@ -14,15 +14,17 @@
     </header>
     <center>
       <div id="app">
-        {{ msg }}
-        <h3>Welcome to {{ inforLink.name }}</h3>
-        <br />
-        <p>
-          Get the Youtube link:
-          <a v-bind:href="inforLink.link">Youtube</a>
-        </p>
-        <br />
-        <p v-html="htmlcode"></p>
+        <h2>Time:{{ getCurrentTime() }}</h2>
+        <h2>Counter: {{ count }}</h2>
+        <button @click="increment(1)">Increase</button>
+        <button @click="decrement(1)">decrease</button>
+        <button @click="increment(5)">Increase</button>
+        <button @click="decrement(5)">decrease</button>
+        <h2>{{ 2+2+1 }}</h2>
+        <h2>Add Method:{{ add(3,5,7) }}</h2>
+        <h2>Add Method:{{ multipy(10) }}</h2>
+        <h2>{{ name }}</h2>
+        <button @click="changeName">Change Name</button>
       </div>
     </center>
     <script src="app.js"></script>
